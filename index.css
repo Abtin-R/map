@@ -1,8 +1,8 @@
         @charset "utf-8";
         #map {
-            width: 100%;
+            min-width: 100%;
             height: 100vh;
-            box-shadow: 5px 5px 15px -6px #888888;
+            height: calc(var(--vh, 1vh) * 100);
         }
         
         * {
@@ -112,8 +112,9 @@
         }
         
         #outer {
-            width: 100vw;
+            min-width: 100%;
             height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             display: flex;
             align-items: center;
             justify-content: center;
